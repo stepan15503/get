@@ -25,4 +25,4 @@ while True:
     for i in leds[::-1]:
         gp.output(i, 1)
         tm.sleep(period)
-        gp.output(i,0)    
+        gp.output(i,0)
