@@ -13,5 +13,5 @@ period=1.0
 
 while True:
     gp.output(led, state)
-    tm.sleep(period)
+    tm.sleep(period/2)
     state = (state+1)%2
