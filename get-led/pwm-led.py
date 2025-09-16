@@ -17,7 +17,7 @@ pwm.start(duty)
 
 state=0
 
-period=10
+period=0.001
 levels=20
 
 while True:
