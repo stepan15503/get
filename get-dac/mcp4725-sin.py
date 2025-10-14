@@ -1,15 +1,16 @@
-import r2r_dac as r2r
+import mcp4725_driver as mcp
 import signal_generator as sg
-amplitude = 3.18
+
+amplitude = 5.11
 signal_frequency = 0.1
 sampling_frequency = 1000
 t=0
 
+
 if __name__ == "__main__":
     try:
-        dac = r2r.R2R_DAC([16, 20, 21, 25, 26, 17, 27, 22], 3.183, True)
-        t=0
-
+        dac = mcp.MCP4725(amplitude, 0x61 ,True)
+        
         while True:
             try:
                 t+=1/sampling_frequency

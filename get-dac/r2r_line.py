@@ -13,7 +13,7 @@ if __name__ == "__main__":
         while True:
             try:
                 t+=1/sampling_frequency
-                voltage = amplitude*sg.get_sin_wave_amplitude(signal_frequency,t)
+                voltage = amplitude*sg.get_line_wave_amplitude(signal_frequency,t)
                 dac.set_voltage(voltage)
                 sg.wait_for_sampling_period(sampling_frequency)
 
